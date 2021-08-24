@@ -1,5 +1,7 @@
 # OCR Captcha Solver
 
+## Overview
+
 The original motivation for this project was to create a neural network based service which can solve poorly designed captchas.  As a control, I implemented a simple OCR based service using <a href="https://pypi.org/project/pytesseract/">pytesseract</a>.  I built a browser automation script using <a href="https://github.com/puppeteer/puppeteer">puppeteer</a>, to build a database of captchas.  Approximately 1008 captcha images were scraped and bifurcated into two folders:
 
 <table>
@@ -39,3 +41,11 @@ With my labeled data, I attempted to read the captchas via OCR.  I developed a s
     </tr>
   </tbody>
 </table>
+
+## Usage
+
+<ol>
+<li>
+  <i>captchaService.py</i> implements findings from <i>main.py</i> to create a captcha solver api service.  The service uses Python's <a href="https://flask.palletsprojects.com/en/2.0.x/">Flask</a> module to create a server with a single route: <i>http://127.0.0.1:5000/{fname}/{threshold}/{rmFile}</i>.  The <i>test/req.py</i> file shows an example of how to make a request to the service.  
+  </li>
+</ol>
