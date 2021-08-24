@@ -10,3 +10,17 @@ The original motivation for this project was to create a neural network based se
   <tr><td >Unlabeled</td><td>622</td></tr>
 </tbody>
 </table>
+
+Some examples of the data:
+<table>
+  <tbody>
+    <tr><td></td></tr>
+    <tr>
+    <td>
+      <img> src=""</img>
+    </td>
+    </tr>
+  </tbody>
+</table>
+
+With my labeled data, I attempted to read the captchas via OCR.  I developed a set of image preprocessing techniques, see <i>im_utils.py</i>.  Then I found the optimal set of preprocessing techniques by enumerating every combination, and then finding the set the produced the result text with the smallest Levenshtein distance from the correct label.  Next, I used the optimal preprocessing and focussed on the relationship between the OCR confidence and the actual accuracy of the result
