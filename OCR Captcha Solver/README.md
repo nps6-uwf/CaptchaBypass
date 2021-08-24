@@ -14,13 +14,16 @@ The original motivation for this project was to create a neural network based se
 Some examples of the data:
 <table>
   <tbody>
-    <tr><td>1ay4df</td><td>3ce2px</td></tr>
+    <tr><td>1AY4DF</td><td>3CE2PX</td><td>HEAZ76</td></tr>
     <tr>
     <td>
       <img src="https://github.com/nps6-uwf/CaptchaBypass/blob/main/OCR%20Captcha%20Solver/figures/1ay4df.png?raw=true"></img>
     </td>
     <td>
       <img src="https://github.com/nps6-uwf/CaptchaBypass/blob/main/OCR%20Captcha%20Solver/figures/3ce2px.png?raw=true"></img>
+    </td>
+    <td>
+      <img src="https://github.com/nps6-uwf/CaptchaBypass/blob/main/OCR%20Captcha%20Solver/figures/heaz76.png?raw=true"></img>
     </td>
     </tr>
   </tbody>
