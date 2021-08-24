@@ -48,4 +48,10 @@ With my labeled data, I attempted to read the captchas via OCR.  I developed a s
 <li>
   <i>captchaService.py</i> implements findings from <i>main.py</i> to create a captcha solver api service.  The service uses Python's <a href="https://flask.palletsprojects.com/en/2.0.x/">Flask</a> module to create a server with a single route: <i>http://127.0.0.1:5000/{fname}/{threshold}/{rmFile}</i>.  The <i>test/req.py</i> file shows an example of how to make a request to the service.  
   </li>
+  <li>
+    <i>scraper/simulate.js</i>, this file executes a working example (on a live website) of how a puppeteer bot can call the <i>captchaService</i> and bypass a captcha on a    website.  The bot keeps requesting the <i>captchaService</i> with new captchas until it finds one where the service solved the captcha with a high enough level of confidence.  
+  </li>
+  <li>
+    <i>scraper/main.js</i>, this is another puppeteer bot that will scrape as many new captchas as you would like.
+  </li>
 </ol>
