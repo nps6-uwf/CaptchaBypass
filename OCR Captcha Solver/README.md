@@ -11,7 +11,7 @@ The original motivation for this project was to create a neural network based se
 </tbody>
 </table>
 
-Some examples of the data:
+Some examples of the data, notice how all of these sequences have 6 characters:
 <table>
   <tbody>
     <tr><td>1AY4DF</td><td>3CE2PX</td><td>HEAZ76</td></tr>
@@ -29,4 +29,13 @@ Some examples of the data:
   </tbody>
 </table>
 
-With my labeled data, I attempted to read the captchas via OCR.  I developed a set of image preprocessing techniques, see <i>im_utils.py</i>.  Then I found the optimal set of preprocessing techniques by enumerating every combination, and then finding the set the produced the result text with the smallest Levenshtein distance from the correct label.  Next, I used the optimal preprocessing and focussed on the relationship between the OCR confidence and the actual accuracy of the result
+With my labeled data, I attempted to read the captchas via OCR.  I developed a set of image preprocessing techniques, see <i>im_utils.py</i>.  Then I found the optimal set of preprocessing techniques by enumerating every combination, and then finding the set the produced the result text with the smallest Levenshtein distance from the correct label.  Next, I used the optimal preprocessing and focussed on the relationship between the OCR confidence and the actual accuracy of the result.  I also generated plots depicting the distribution of characters that were either correctly or incorrectly interpreted and a pie chart showing the proportion of result lengths that were correct:
+
+<table>
+  <tbody>
+    <tr>
+    <td><img src="https://github.com/nps6-uwf/CaptchaBypass/blob/main/OCR%20Captcha%20Solver/figures/correctCharacterDistribution.PNG?raw=true"></img></td>
+    <td><img src="https://github.com/nps6-uwf/CaptchaBypass/blob/main/OCR%20Captcha%20Solver/figures/lengthDistribution.PNG?raw=true"></img></td>
+    </tr>
+  </tbody>
+</table>
