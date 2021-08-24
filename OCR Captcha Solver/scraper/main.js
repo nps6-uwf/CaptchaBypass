@@ -7,7 +7,7 @@ const puppeteer = require('puppeteer');
 const fs = require('fs');
 const request = require('request');
 
-const URL = 'https://www.siam-legal.com/contactus.php';
+const URL = ''; // website available on request.
 
 
 const download = (uri, filename) => {
