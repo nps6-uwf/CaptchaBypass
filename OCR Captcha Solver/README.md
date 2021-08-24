@@ -6,7 +6,7 @@ The original motivation for this project was to create a neural network based se
 <tbody>
   <tr><td colspan=2>Captchas</td></tr>
   <tr><td >Directory Name</td><td># Files</td></tr>
-  <tr><td >labled</td><td>326</td></tr>
-  <tr><td >Unlabeled</td><td>644</td></tr>
+  <tr><td >labled</td><td>386</td></tr>
+  <tr><td >Unlabeled</td><td>622</td></tr>
 </tbody>
 </table>
