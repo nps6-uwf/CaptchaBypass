@@ -11,6 +11,7 @@ import cv2
 from os import listdir
 import numpy as np
 from img_utils import apply_all, replace_punctuation
+from string import ascii_lowercase as ABC, digits
 import pickle
 
 
